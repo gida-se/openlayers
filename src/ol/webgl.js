@@ -96,6 +96,7 @@ export function getContext(canvas, attributes) {
     {
       preserveDrawingBuffer: true,
       antialias: SAFARI_BUG_237906 ? false : true, // https://bugs.webkit.org/show_bug.cgi?id=237906
+      stencil: true,
     },
     attributes,
   );
